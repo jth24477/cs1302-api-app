@@ -7,50 +7,29 @@ Markdown is transformed into nice-looking HTML.
 
 ## Part 1.1: App Description
 
-> Please provide a friendly description of your app, including
-> the primary functions available to users of the app. Be sure to
-> describe exactly what APIs you are using and how they are connected
-> in a meaningful way.
+This is a recipe app meant to aid users in finding recipes and getting ideas to make meals. It uses 2 APIs: Edamam Recipe API and OpenFoodFacts Search API. The Edamam Recipe API provides a database of recipes from the search query that is then presented to the user in list form. The user can click on the specified recipe they want to browse and that will open a webpage to the recipe's url to where they can see the ingredients and instructions. The OpenFoodFacts Search API allows users to find products that match with the user's search term. It provides a list of related items that users can take inspiration from if they don't want to use a recipe.
 
-> **Also, include the GitHub `https` URL to your repository.**
-
-TODO WRITE / REPLACE
+https://github.com/jth24477/cs1302-api-app
 
 ## Part 1.2: APIs
 
-> For each RESTful JSON API that your app uses (at least two are required),
-> include an example URL for a typical request made by your app. If you
-> need to include additional notes (e.g., regarding API keys or rate
-> limits), then you can do that below the URL/URI. Placeholders for this
-> information are provided below. If your app uses more than two RESTful
-> JSON APIs, then include them with similar formatting.
 
-### API 1
+### Edamam Recipe Search API
 
 ```
-https://.../replace/me
+https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=35b6401b&app_key=%2041191a205a196f9830c5d43ffd55a9d8%09
 ```
 
-> Replace this line with notes (if needed) or remove it (if not needed).
-
-### API 2
+### OpenFoodFacts Search API
 
 ```
-https://../replace/me
+https://world.openfoodfacts.net/api/v2/search?categories_tags_en=chicken.
 ```
-
-> Replace this line with notes (if needed) or remove it (if not needed).
 
 ## Part 2: New
 
-> What is something new and/or exciting that you learned from working
-> on this project?
-
-TODO WRITE / REPLACE
+From this project I have learned more about the JavaFX GUI. I wanted to be able to place the information from the JSON objects parsed into a near list format. I learned how to do so with ListView and adding labels to the lists so that it is clickable for the user. Personally, I am a food lover and I love to cook, so I was able to combine my interests in making food into this app.
 
 ## Part 3: Retrospect
 
-> If you could start the project over from scratch, what do
-> you think might do differently and why?
-
-TODO WRITE / REPLACE
+One thing I wished I could change from this project in the beginning is using a different format. I wanted to orginally use a StackView format but opted for a BorderPane format. I also want to be able to make this app more aesthetically pleasing, but didn't have the time to learn how to. I wanted to add another API that implemented a grocery store aspect where users can directing add ingredients from the recipes into their carts.
